@@ -24,6 +24,7 @@
 }
 
 .s-slider {
+  position: relative;
 }
 
 .s-slider__frame {
@@ -35,6 +36,34 @@
   position: relative;
 }
 
+.s-slider__wrapper.s-slider-effect {
+  transition: left 0.7s ease;
+}
+
 .s-slider-slide {
   flex: 0 0 100%;
+}
+
+.s-slider-buttons {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.s-slider-buttons__btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.s-slider-buttons__btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.s-slider-buttons__btn_prev {
+}
+.s-slider-buttons__btn_next {
+  margin-left: auto;
 }

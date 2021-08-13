@@ -9,10 +9,10 @@
     <title>Super Slider</title>
   </head>
   <body>
-    <div id="slider" class="s-slider">
-      <div class="_container">
-        <div class="s-slider__frame">
-          <div class="s-slider__wrapper">
+    <div class="_container">
+      <div id="slider" class="s-slider">
+        <div class="s-slider__frame" data-slider-frame>
+          <div class="s-slider__wrapper" data-slider-container>
             <div class="s-slider-slide">
               <div class="_picture">
                 <img
@@ -42,9 +42,19 @@
             </div>
           </div>
         </div>
-        <div class="s-slider__buttons">
-          <button class="s-slider-btn">Prev</button>
-          <button class="s-slider-btn">Next</button>
+        <div class="s-slider-buttons">
+          <button
+            data-slider-controller="prev"
+            class="s-slider-buttons__btn s-slider-buttons__btn_prev"
+          >
+            Prev
+          </button>
+          <button
+            data-slider-controller="next"
+            class="s-slider-buttons__btn s-slider-buttons__btn_next"
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>
